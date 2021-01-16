@@ -16,9 +16,7 @@ a {
 
 body {
     position: relative;
-    font-family: 'Lato', sans-serif;
-    /*overflow: hidden;*/
-    /**/
+    font-family: 'Roboto', sans-serif;
 }
 
 .dark-blue {
@@ -87,7 +85,7 @@ body {
 
 .banner__desc {
     position: relative;
-    padding-right: 7vw;
+    padding-left: 7vw;
     animation: appear .7s ease-in-out;
     opacity: 1;
 }
@@ -107,7 +105,6 @@ body {
 .header {
     margin-top: 3vh;
     margin-bottom: 5vh;
-    /*font-family: 'Cormorant Garamond', serif;*/
     font-size: 50px;
     font-weight: 600;
     font-style: italic;
@@ -116,7 +113,7 @@ body {
 
 .banner__header {
     opacity: 1;
-    text-align: right;
+    text-align: left;
     color: #08666e;
     animation: toRight .7s;
 }
@@ -145,11 +142,11 @@ body {
 }
 
 .banner__text {
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    font-weight: 300;
+    /*font-family: 'Roboto', sans-serif;*/
+    font-size: 26px;
+    font-weight: 500;
     line-height: 40px;
-    text-align: right;
+    text-align: left;
     color: #314241;
 }
 
@@ -191,24 +188,31 @@ body {
 /*---------------key--------------*/
 
 .key__block {
-    width: 200%;
+    width: 1300px;
     position: absolute;
     bottom: -370px;
-    right: 0;
+    left: 0;
     padding-right: 50px;
     padding-left: 50px;
     background-color: #08666e;
+    /*overflow: hidden;*/
+}
+@media screen and (max-width: 1410px) {
+    .key__block {
+        width: 90vw;
+    }
 }
 
-.key__block:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -250px;
-    width: 250px;
-    height: 100%;
-    background-color: #08666e;
-}
+
+/*.key__block:after {*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    right: -400px;*/
+/*    width: 450px;*/
+/*    height: 100%;*/
+/*    background-color: #08666e;*/
+/*}*/
 
 .key__content {
     /*position: absolute;*/
@@ -223,10 +227,11 @@ body {
     margin-top: 3vh;
     margin-bottom: 5vh;
     /*font-family: 'Cormorant Garamond', serif;*/
-    font-size: 30px;
+    font-size: 26px;
     font-weight: 600;
+    line-height: 40px;
     font-style: normal;
-    text-align: right;
+    text-align: left;
     color: #faf6ea;
 }
 
@@ -262,7 +267,7 @@ body {
 .highlight__text {
     margin-bottom: 40px;
     /*font-family: 'Cormorant Garamond', serif;*/
-    font-size: 25px;
+    font-size: 26px;
     font-weight: 300;
     font-style: normal;
     text-align: left;
@@ -272,7 +277,7 @@ body {
 .about__text {
     margin-bottom: 40px;
     /*font-family: 'Cormorant Garamond', serif;*/
-    font-size: 25px;
+    font-size: 26px;
     font-weight: 300;
     font-style: normal;
     text-align: left;
@@ -314,7 +319,7 @@ body {
 
 .frame-text__header {
     margin-bottom: 20px;
-    font-size: 22px;
+    font-size: 26px;
     font-weight: 600;
     font-style: normal;
     text-align: left;
@@ -323,7 +328,7 @@ body {
 
 .frame-text__text {
     margin-bottom: 20px;
-    font-size: 22px;
+    font-size: 26px;
     font-weight: 300;
     font-style: normal;
     text-align: left;
@@ -364,7 +369,7 @@ body {
     position: relative;
     margin-left: 120px;
     margin-bottom: 40px;
-    font-size: 25px;
+    font-size: 26px;
     font-weight: 400;
     line-height: 45px;
     text-align: left;
@@ -500,7 +505,7 @@ body {
 .about-content__text {
     margin-left: 120px;
     margin-bottom: 20px;
-    font-size: 25px;
+    font-size: 26px;
     font-weight: 400;
     line-height: 45px;
     text-align: left;
@@ -641,19 +646,35 @@ body {
     height: 15px;
 }
 
+
+
+.thin-frame__text {
+    margin-left: 120px;
+    margin-bottom: 50px;
+    padding: 30px 90px 45px;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 45px;
+    text-align: center;
+    border: 1px solid #faf6ea;
+    background-color: transparent;
+}
+
 .button__container {
     width: 100%;
+    padding-left: 120px;
     text-align: center;
 }
 
 .button {
     display: inline-block;
-    margin-top: 40px;
+    margin-bottom: 40px;
     padding: 30px 90px;
     border: 1px solid #faf6ea;
     color: #faf6ea;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    /*font-family: 'Roboto', sans-serif;*/
+    font-family: 'EB Garamond', serif;
+    font-size: 26px;
     font-weight: 300;
     background-color: transparent;
     transition: .3s;
