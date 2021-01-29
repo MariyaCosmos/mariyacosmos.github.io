@@ -118,6 +118,7 @@
 .content__header {
     margin-bottom: 30px;
     line-height: 50px;
+    padding: 0 5px;
 }
 .content__text {
     margin-left: 0;
@@ -174,11 +175,22 @@
     width: 100%;
     margin-top: 20px;
     padding: 20px 25px;
-    font-size: 20px;
+    font-size: 22px;
+}
+.basic__button {
     background-color: #763241;
     border: 1px solid #763241;
 }
-.button:hover {
+.basic__button:hover {
     color: #763241;
     background-color: #faf6ea;
+    border: 1px solid #faf6ea;
+}
+.destiny__button {
+    background-color: #faf6ea;
+    color: #101630;
+}
+.destiny__button:hover {
+    background-color: #101630;
+    color: #faf6ea;
 }

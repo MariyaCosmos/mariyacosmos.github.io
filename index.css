@@ -35,6 +35,10 @@ body {
     background-color: #314241;
 }
 
+.bcg_cosmic-blue {
+    background-color: #101630;
+}
+
 .bcg-blue {
     background-color: #08666e;
 }
@@ -476,9 +480,12 @@ body {
 .section__big-frame {
     padding-top: 50px;
     padding-bottom: 50px;
+    display: flex;
+}
+
+.basic__frame {
     background: url("bcg-2.jpg") center center no-repeat;
     background-size: cover;
-    display: flex;
 }
 
 .wrapper_big-frame {
@@ -499,7 +506,7 @@ body {
     padding: 80px 50px 50px 100px;
 }
 
-.basic__header {
+.content__header {
     text-align: center;
     color: #faf6ea;
     margin-top: 0;
@@ -684,8 +691,33 @@ body {
     transition: .3s;
 }
 
-.button:hover {
+.basic__button:hover {
     background-color: #763241;
     border: 1px solid #763241;
 }
 
+
+/*---------------content--------------*/
+
+.section__destiny {
+    padding-top: 80px;
+    background-color: #101630;
+}
+
+.destiny-head {
+    width: 100%;
+    background: url("bcg-5.jpg") bottom center no-repeat;
+    background-size: cover;
+    padding-top: 180px;
+    padding-bottom: 65px;
+}
+
+.destiny__frame {
+    background: url("bcg-13.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.destiny__button:hover {
+    background-color: #faf6ea;
+    color: #101630;
+}
