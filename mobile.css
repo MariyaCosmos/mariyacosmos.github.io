@@ -149,8 +149,9 @@
 /*---------------basic--------------*/
 .basic-head {
     background-size: unset;
-    padding-top: 50px;
-    padding-bottom: 30px;
+    background: url("bcg-2.jpg") center left no-repeat;
+    /*padding-top: 50px;*/
+    /*padding-bottom: 30px;*/
 }
 .section__basic {
     padding-top: 50px;
@@ -178,6 +179,7 @@
     font-size: 22px;
 }
 .basic__button {
+    padding: 20px 36px;
     background-color: #763241;
     border: 1px solid #763241;
 }
@@ -186,11 +188,15 @@
     background-color: #faf6ea;
     border: 1px solid #faf6ea;
 }
-.destiny__button {
+.destiny__button:hover {
     background-color: #faf6ea;
     color: #101630;
 }
-.destiny__button:hover {
-    background-color: #101630;
-    color: #faf6ea;
+/*.destiny__button:hover {*/
+/*    background-color: #101630;*/
+/*    color: #faf6ea;*/
+/*}*/
+/*---------------destiny--------------*/
+.section__destiny {
+    padding-top: 50px;
 }
