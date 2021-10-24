@@ -730,7 +730,7 @@ body {
     width: 100%;
     background-color: #08666e;
     padding-top: 80px;
-    padding-bottom: 65px;
+    padding-bottom: 30px;
 }
 .section__reviews {
     background-color: #08666e;
@@ -744,18 +744,28 @@ body {
 .section__trust {
     background-color: #22abb8;
 }
-.trust__box {
+.img__container {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.review__img {
+    width: 31%;
+    margin-bottom: 20px;
 }
 .trust__img {
     width: 31%;
     margin-bottom: 20px;
 }
 @media screen and (max-width: 1080px) {
-    .trust__box {
+    .img__container {
         display: flex;
         flex-direction: column;
+    }
+    .review__img {
+        width: 100%;
+        margin-bottom: 20px;
     }
     .trust__img {
         width: 100%;
