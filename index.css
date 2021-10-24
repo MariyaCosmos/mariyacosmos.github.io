@@ -752,7 +752,7 @@ body {
     width: 31%;
     margin-bottom: 20px;
 }
-@media screen and (max-width: 1410px) {
+@media screen and (max-width: 1080px) {
     .trust__box {
         display: flex;
         flex-direction: column;
