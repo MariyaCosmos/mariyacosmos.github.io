@@ -1,6 +1,12 @@
 .section {
     padding: 20px;
 }
+@media screen and (max-width: 768px) {
+    .section {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
 .section__banner {
     padding-bottom: 150px;
 }

@@ -259,7 +259,6 @@ body {
 .highlight__item {
     position: relative;
     margin-left: 220px;
-    /*margin-bottom: 30px;*/
 }
 
 .highlight__item:before {
@@ -280,6 +279,11 @@ body {
     font-style: normal;
     text-align: left;
     line-height: 45px;
+}
+
+.highlight__img {
+    width: 100%;
+    margin-bottom: 40px;
 }
 
 .about__text {
@@ -307,7 +311,7 @@ body {
     /*margin-top: 50px;*/
     /*margin-bottom: 80px;*/
     width: 100%;
-    background: url("bcg-9.jpg") center center no-repeat;
+    background: url("img/bcg/bcg-9.jpg") center center no-repeat;
     background-size: cover;
 }
 
@@ -385,7 +389,7 @@ body {
 
 .basic-head {
     width: 100%;
-    background: url("bcg-2.jpg") bottom center no-repeat;
+    background: url("img/bcg/bcg-2.jpg") bottom center no-repeat;
     background-size: cover;
     padding-top: 180px;
     padding-bottom: 65px;
@@ -484,7 +488,7 @@ body {
 }
 
 .basic__frame {
-    background: url("bcg-2.jpg") center center no-repeat;
+    background: url("img/bcg/bcg-2.jpg") center center no-repeat;
     background-size: cover;
 }
 
@@ -589,26 +593,26 @@ body {
 }
 
 
-.content__item:nth-child(2)::after {
-    content: "";
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    /*top: 40%;*/
-    left: -55px;
-    background: url("star-light-1.svg") center center no-repeat;
-}
+/*.content__item:nth-child(2)::after {*/
+/*    content: "";*/
+/*    width: 30px;*/
+/*    height: 30px;*/
+/*    position: absolute;*/
+/*    !*top: 40%;*!*/
+/*    left: -55px;*/
+/*    background: url("star-light-1.svg") center center no-repeat;*/
+/*}*/
 
 
-.content__item:nth-child(3)::after {
-    content: "";
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    /*top: 40%;*/
-    left: -60px;
-    background: url("moon-light-1.svg") center center no-repeat;
-}
+/*.content__item:nth-child(3)::after {*/
+/*    content: "";*/
+/*    width: 40px;*/
+/*    height: 40px;*/
+/*    position: absolute;*/
+/*    !*top: 40%;*!*/
+/*    left: -60px;*/
+/*    background: url("moon-light-1.svg") center center no-repeat;*/
+/*}*/
 
 
 .content__item:nth-child(4)::before {
@@ -706,14 +710,14 @@ body {
 
 .destiny-head {
     width: 100%;
-    background: url("bcg-5.jpg") bottom center no-repeat;
+    background: url("img/bcg/bcg-5.jpg") bottom center no-repeat;
     background-size: cover;
     padding-top: 180px;
     padding-bottom: 65px;
 }
 
 .destiny__frame {
-    background: url("bcg-13.jpg") center center no-repeat;
+    background: url("img/bcg/bcg-13.jpg") center center no-repeat;
     background-size: cover;
 }
 
@@ -750,24 +754,29 @@ body {
     align-items: flex-start;
     flex-wrap: wrap;
 }
-.review__img {
+.content__img {
     width: 31%;
     margin-bottom: 20px;
 }
-.trust__img {
-    width: 31%;
-    margin-bottom: 20px;
+@media screen and (max-width: 768px) {
+    .img__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .content__img {
+        width: 47%;
+        margin-bottom: 20px;
+    }
 }
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 576px) {
     .img__container {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
-    .review__img {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-    .trust__img {
+    .content__img {
         width: 100%;
         margin-bottom: 20px;
     }
