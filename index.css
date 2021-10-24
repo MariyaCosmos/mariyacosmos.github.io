@@ -197,7 +197,7 @@ body {
     bottom: -370px;
     left: 0;
     padding-right: 50px;
-    padding-left: 50px;
+    padding-left: 120px;
     background-color: #08666e;
     /*overflow: hidden;*/
 }
@@ -720,4 +720,45 @@ body {
 .destiny__button:hover {
     background-color: #faf6ea;
     color: #101630;
+}
+
+
+
+/*---------------reviews, trust--------------*/
+
+.reviews-head {
+    width: 100%;
+    background-color: #08666e;
+    padding-top: 80px;
+    padding-bottom: 65px;
+}
+.section__reviews {
+    background-color: #08666e;
+}
+.trust-head {
+    width: 100%;
+    background-color: #22abb8;
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+.section__trust {
+    background-color: #22abb8;
+}
+.trust__box {
+    display: flex;
+    justify-content: space-between;
+}
+.trust__img {
+    width: 31%;
+    margin-bottom: 20px;
+}
+@media screen and (max-width: 1410px) {
+    .trust__box {
+        display: flex;
+        flex-direction: column;
+    }
+    .trust__img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
