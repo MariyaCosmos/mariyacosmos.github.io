@@ -1,0 +1,37 @@
+/*---------------reviews--------------*/
+.carousel {
+    width: 100%;
+}
+.carousel__container {
+    width: 500px;
+    height: 500px;
+}
+.carousel__wrapper {
+    width: 500px;
+    height: 500px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+.carousel__section {
+    width: 500px;
+    scroll-snap-align: start;
+}
+.carousel__img {
+    display: block;
+    width: 480px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+#carousel-left {
+    display: none;
+}
+#carousel-right {
+    display: none;
+}
+
+
+
+.content__img {
+    width: 48%;
+    margin-bottom: 20px;
+}

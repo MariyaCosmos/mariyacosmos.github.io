@@ -748,6 +748,78 @@ body {
 .section__trust {
     background-color: #22abb8;
 }
+.carousel {
+    position: relative;
+    width: 800px;
+    margin: 0 auto;
+}
+/*@media screen and (max-width: 768px) {
+    .carousel {
+        width: 100%;
+    }
+}*/
+.carousel__container {
+    width: 600px;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.carousel__wrapper {
+    height: 600px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    /*width: 90%;*/
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    /*overflow: hidden;*/
+    overflow-y: hidden;
+}
+.carousel__section {
+    width: 600px;
+    max-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carousel__img {
+    display: block;
+    width: 580px;
+    max-height: 100%;
+    /*margin-right: 25px;*/
+    /*margin-bottom: 20px;*/
+    flex-shrink: 0;
+}
+.carousel__btn {
+    position: absolute;
+    top: 45%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carousel__btn:hover {
+    cursor: pointer;
+}
+#carousel-left {
+    left: 0;
+}
+#carousel-left svg path {
+    fill: #fff;
+}
+#carousel-right {
+    right: 0;
+}
+#carousel-right svg {
+    transform: rotate(180deg);
+}
+#carousel-right svg path {
+    fill: #fff;
+}
+
 .img__container {
     display: flex;
     justify-content: space-between;
